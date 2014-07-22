@@ -1,4 +1,4 @@
-angular-focus-field-field
+angular-focus-first-field
 =====================
 
 AngularJS directive that focuses the first empty input

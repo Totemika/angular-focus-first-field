@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="angular-focus-first-field.js"></script>
+  <script>
+  angular.module('myApp', ['angular-focus-first-field'])
+    .controller('myCtrl', function($scope) {
+      $scope.text = 'foo';
+      $scope.email = 'email';
+    });
+  </script>
+</head>
+<body ng-app="myApp">
+  <div ng-controller="myCtrl">
+    <ng-form name="form" novalidate focus-first-field>
+      <input type="text" placeholder="Enter some text" ng-model="text"/>
+      <input type="email" placeholder="Enter your email" ng-model="email"/>
+      <input type="number" placeholder="Enter your favorite number of all time" ng-model="number"/>
+      <input type="url" placeholder="Enter your homepage" ng-model="url"/>
+    </ng-form>
+  </div>
+</body>
+</html>

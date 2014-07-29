@@ -34,8 +34,9 @@
           function attempt() {
             $timeout(function() {
               inputs = $element.find('input');
-              --attemptsLeft;
-              check();
+              if (--attemptsLeft >= 0) {
+                check();
+              }
             });
           }
 

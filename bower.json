@@ -1,7 +1,7 @@
 {
   "name": "angular-focus-first-field",
   "main": "angular-focus-first-field.js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "homepage": "https://github.com/chrisronline/angular-focus-first-field",
   "license": "MIT",
   "keywords": ["angular", "forms", "focus"],
